@@ -24,7 +24,9 @@ const scrivi = () => {
 const secondo = () => {
   tempo = sessionStorage.getItem("tempo");
   tempo++;
-  tempoInHtml.innerText = `tempo trascorso ${tempo}`;
+  let sec = tempo % 60;
+  let min = Math.floor(tempo / 60);
+  tempoInHtml.innerText = `tempo trascorso ${min} : ${sec}`;
   sessionStorage.setItem("tempo", tempo);
 };
 
