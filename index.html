@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <form action="salvaDati">
+          <input type="text" required placeholder="nome" />
+          <input type="password" required placeholder="password" />
+          <input type="number" required placeholder="cell number" />
+          <input type="submit" onclick="salvaInMemoria(event)" value="save" class="save" />
+        </form>
+      </div>
+      <form action="cancDati">
+        <div>
+          <input type="password" required class="canc" placeholder="password" />
+          <input type="submit" onclick="cancellaInMemoria(event)" value="canc" class="canc" />
+        </div>
+      </form>
+    </header>
+    <main>
+      <ul></ul>
+      <p></p>
+    </main>
+    <script src="local.js"></script>
+  </body>
+</html>
