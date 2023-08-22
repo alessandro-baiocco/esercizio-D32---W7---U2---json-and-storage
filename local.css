@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: aqua;
+  padding: 10px;
+}
+
+header input {
+  margin: 4px;
+}
+
+.canc,
+.save {
+  color: white;
+  background-color: black;
+}
+
+main ul {
+  background-color: azure;
+  color: blue;
+}
+
+main p {
+  color: white;
+  background-color: black;
+  width: fit-content;
+}
